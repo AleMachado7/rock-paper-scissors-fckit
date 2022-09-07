@@ -1,0 +1,57 @@
+body {
+    background-color: lightgreen;
+}
+
+.header {
+    display: flex;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.header-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.game-section {
+    display: flex;
+    flex-direction: column;
+}
+
+.game-buttons {
+    display: flex;
+    gap: 8px;
+}
+
+h1 {
+    font-size: 40px;
+}
+
+h3 {
+    font-size: 25px;
+}
+
+#rock-btn, #paper-btn, #scissors-btn,
+#fck-btn {
+    border-radius: 10%;
+    position: relative;
+    top: 0;
+    transition: top ease 0.5s;
+}
+
+#rock-btn:hover, #paper-btn:hover, #scissors-btn:hover,
+#fck-btn:hover {
+    top: -15px;
+  }
+
+p {
+    font-size: 20px;
+}
+
+spam {
+    font-weight: 800;
+}
