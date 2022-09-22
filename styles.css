@@ -1,10 +1,14 @@
+ * {
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: white;
+ }
+
 body {
-    background-color: lightgreen;
+    background-color: rgb(73, 39, 38);
 }
 
 .header {
     display: flex;
-    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     justify-content: center;
     align-items: center;
     flex-direction: column;
@@ -17,39 +21,46 @@ body {
     flex-direction: column;
 }
 
+h1 {
+    font-size: 40px;
+    margin-bottom: 0px;
+}
+
+.description-one {
+    font-size: 18px;
+    font-weight: 200;
+}
+
 .game-section {
     display: flex;
-    flex-direction: column;
 }
 
 .game-buttons {
     display: flex;
-    gap: 8px;
+    gap: 12px;
 }
 
-h1 {
-    font-size: 40px;
-}
-
-h3 {
-    font-size: 25px;
-}
-
-#rock-btn, #paper-btn, #scissors-btn,
-#fck-btn {
+#rock-btn, #paper-btn,
+#scissors-btn, #fck-btn {
     border-radius: 10%;
     position: relative;
     top: 0;
     transition: top ease 0.5s;
+    box-shadow: 0 5px 15px rgba(0,0,0,5);
 }
 
-#rock-btn:hover, #paper-btn:hover, #scissors-btn:hover,
-#fck-btn:hover {
-    top: -15px;
-  }
+#rock-btn:hover, #paper-btn:hover,
+#scissors-btn:hover, #fck-btn:hover {
+    top: -12px;
+}
 
-p {
-    font-size: 20px;
+.description-two {
+    font-size: 16px;
+    font-weight: 200;
+}
+
+.result-section {
+   display: flex;
 }
 
 spam {

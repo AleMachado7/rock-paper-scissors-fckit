@@ -30,25 +30,7 @@ function playRound(playerSelection) {
     document.getElementById("computer-score").innerHTML = computerScore
     return `You lost! ${computerSelection.toUpperCase()} beats ${playerSelection.toUpperCase()}.`
 }   
-
-function game() {
-    for (i = 0; i < 5; i++) {
-        let player = document.getElement
-        let computer = getComputerChoice()
-        let result = playRound(player, computer)
-    
-        result.includes("won") ? playerScore++ : result.includes("lost") ? computerScore++ : null
-        console.log(`Round result: ${result}`)
-    }
-
-    if (playerScore > computerScore) {
-        console.log(`The player has won!\nGame final results: Player Score [[ ${playerScore} ]] \t Computer Score [[ ${computerScore} ]].`)
-    } else if (computerScore > playerScore) {
-        console.log(`The computer has won!\nGame final results: Player Score [[ ${playerScore} ]] \t Computer Score [[ ${computerScore} ]].`)
-    } else {
-        console.log(`Its a tie!!!\nGame final results: Player Score [[ ${playerScore} ]] \t Computer Score [[ ${computerScore} ]].`)
-    }
-}    
+   
 
 let roundResult = document.getElementById("round-result")
 document.getElementById("rock-btn").addEventListener("click", () => roundResult.innerHTML = playRound("Rock"));

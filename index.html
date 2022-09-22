@@ -1,17 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <title>Rock, Paper, Scissors and F##k It</title>
+        <title>Rock, Paper, Scissors or F##k It</title>
         <meta charset="utf-8">        
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="./styles.css">
     </head>
-    <body>
-        
+    <body>        
         <div class="header">
-        <div class="header-content">
-            <h1>Rock, Paper, Scissors and F##k It</h1> 
-            <h3>Try your luck:</h3>       
+            <div class="header-content">
+                <h1>Rock, Paper, Scissors or F##k It</h1> 
+                <p class="description-one"><em>Try your luck:</em></p>       
+            </div>
         </div>
         <div class ="game-section">
             <div class="game-buttons">
@@ -20,13 +20,17 @@
                 <input id="scissors-btn" type="image" src="./images/scissors-button.png" value="scissors" alt="Scissors" width="150" height="150">
                 <input id="fck-btn" type="image" src="./images/fuckit-button.png" value="fuck it" alt="F##k It" width="150" height="150">
             </div>
+        </div>  
+        <p class="description-two"><em>Just click one of the buttons above to play.</em></p>
+        <p class="description-two"><em>The game works in rounds of 5. The first player to achieve 5 points wins!</em></p>              
+        <div class="result-section">
             <div class="game-score">
                 <p>Player Score: <spam id="player-score">0</spam></p>
                 <p>Computer Score: <spam id="computer-score">0</spam></p>
+                <p>Round Result: <spam id="round-result"></spam></p>
+                <p>Final Result: <spam id="final-result"></spam></p>
             </div>
-        </div>
-        <p>Round Result: <spam id="round-result"></spam></p>
-        </div>
+        </div> 
     </body>
     <script src="./script.js"></script>
 </html>
